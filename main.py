@@ -76,7 +76,7 @@ async def is_member(client, user_id, channel):
         print(f"Error checking membership for user {user_id} in {channel}: {e}")
         return False
 
-async def is_admin(user_id, chat_id):
+async def l_admin(user_id, chat_id):
     try:
         member: ChatMember = await client.get_chat_member(chat_id, user_id)
         print(f"User {user_id} is {member.status} in chat {chat_id}")  # Debug print
